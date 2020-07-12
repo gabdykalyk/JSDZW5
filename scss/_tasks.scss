@@ -1,0 +1,101 @@
+@mixin before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%)
+}
+
+.tasks {
+        width: 93%;
+        margin: 34px auto;
+
+        &__item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 25px;
+
+        }
+
+        &__name {
+            width: 60%;
+        }
+
+        &__priority {
+            position: relative;
+            width: 20%;
+
+            &--purple {
+                &::before {
+                    @include before;
+                    background-color: #4764C9;
+                }
+            }
+
+            &--red {
+                &::before {
+                    @include before;
+                    background-color: #D10C0C;
+                }
+            }
+
+            
+            &--orange {
+                &::before {
+                    @include before;
+                    background-color: #F1AE00;;
+                }
+            }
+        }
+
+        .check {
+            display: flex;
+            margin: 0;
+            margin-bottom: 2px;
+        }
+
+
+        .custom__check {
+            width: 15px;
+            height: 15px;
+            background: #B3F2CC ;
+            border: 1px solid #9AEEBB;
+            position: relative;
+            
+
+            .check__inner {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                width: 9px;
+                height: 9px;
+                background-color: #ffffff;
+                transition: background-color 0.2s linear;
+            }
+        }
+
+        .check__item {
+            display: none;
+
+                &:checked ~ .custom__check > .check__inner{
+                    background-color: #9AEEBB;
+                }
+        }
+
+        .delete {
+            color: #4DD784;
+            margin-bottom: 2px;
+            transition: color 0.2s linear;
+
+                &:hover {
+                    color: #ff0000;
+                }
+        }
+
+
+    }

@@ -1,0 +1,55 @@
+@import "heading";
+@import 'status';
+@import 'form';
+@import 'tasks';
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #5994D9;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+.main {
+    width: 90%;
+    margin: 100px auto 0;
+    background-color: #ffffff;
+    min-height: 80vh;
+    padding-bottom: 50px;
+    position: relative;
+
+    .clear {
+        position: absolute;
+        left: 30px;
+        bottom: 15px;
+        color: #4DC97E;
+        font-weight: 700;
+        font-size: 18px;
+        transition: color 0.2s linear;
+
+        &:hover {
+            color: #ff0000;
+        }
+    }
+
+    .add {
+        position: absolute;
+        right: 40px;
+        bottom: 15px;
+        font-weight: 700;
+        font-size: 24px;
+        color: #DC5252;
+        transition: color 0.2s linear;
+
+        &:hover {
+            color: #fc944f;
+        }
+    }
+    
+}

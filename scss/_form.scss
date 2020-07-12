@@ -1,0 +1,38 @@
+.form__label {
+        width: 95%;
+        display: flex;
+        border-bottom: 2px solid #9AEEBB;
+        margin: 0 auto;
+        position: relative;
+
+        .filter {
+        width: 100%;
+        margin-top: 15px;
+        height: 100%;
+        font-weight: 600;
+        font-size: 36px;
+        border: none;
+        outline: none;
+        color: #B92121;
+
+            &::placeholder {
+            color: #B92121;
+            }
+        }
+
+        a {
+            color: #000000;
+            transition: color 0.2s linear;
+
+            &:hover {
+                color: #007bff;
+            }
+        }
+
+        .arrow {
+            font-size: 70px;
+            position: absolute;
+            right: -15px;
+            bottom: -5px;
+        }
+    }
