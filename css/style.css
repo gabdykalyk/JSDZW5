@@ -1,0 +1,166 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #5994D9;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px; }
+
+.main {
+  width: 90%;
+  margin: 100px auto 0;
+  background-color: #ffffff;
+  min-height: 80vh;
+  padding-bottom: 50px;
+  position: relative; }
+  .main .heading {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 28px;
+    padding-top: 29px;
+    padding-left: 29px; }
+  .main .status {
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 45px;
+    margin-left: 35px;
+    display: flex; }
+    .main .status__item {
+      border-radius: 5px;
+      padding: 2px 10px;
+      margin-right: 300px; }
+      .main .status__item--purple {
+        background: #D6C9D8;
+        color: #5231AE; }
+      .main .status__item--green {
+        background: #9AEEBB;
+        color: #169357; }
+      .main .status__item--red {
+        background: #F1B1B1;
+        color: #DE3838; }
+  .main .form__label {
+    width: 95%;
+    display: flex;
+    border-bottom: 2px solid #9AEEBB;
+    margin: 0 auto;
+    position: relative; }
+    .main .form__label .filter {
+      width: 100%;
+      margin-top: 15px;
+      height: 100%;
+      font-weight: 600;
+      font-size: 36px;
+      border: none;
+      outline: none;
+      color: #B92121; }
+      .main .form__label .filter::placeholder {
+        color: #B92121; }
+    .main .form__label a {
+      color: #000000;
+      transition: color 0.2s linear; }
+      .main .form__label a:hover {
+        color: #007bff; }
+    .main .form__label .arrow {
+      font-size: 70px;
+      position: absolute;
+      right: -15px;
+      bottom: -5px; }
+  .main .tasks {
+    width: 93%;
+    margin: 34px auto; }
+    .main .tasks__item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 25px; }
+    .main .tasks__name {
+      width: 60%; }
+    .main .tasks__priority {
+      position: relative;
+      width: 20%; }
+      .main .tasks__priority--purple::before {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        top: 50%;
+        left: -20px;
+        transform: translateY(-50%);
+        background-color: #4764C9; }
+      .main .tasks__priority--red::before {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        top: 50%;
+        left: -20px;
+        transform: translateY(-50%);
+        background-color: #D10C0C; }
+      .main .tasks__priority--orange::before {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        top: 50%;
+        left: -20px;
+        transform: translateY(-50%);
+        background-color: #F1AE00; }
+    .main .tasks .check {
+      display: flex;
+      margin: 0;
+      margin-bottom: 2px; }
+    .main .tasks .custom__check {
+      width: 15px;
+      height: 15px;
+      background: #B3F2CC;
+      border: 1px solid #9AEEBB;
+      position: relative; }
+      .main .tasks .custom__check .check__inner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 9px;
+        height: 9px;
+        background-color: #ffffff;
+        transition: background-color 0.2s linear; }
+    .main .tasks .check__item {
+      display: none; }
+      .main .tasks .check__item:checked ~ .custom__check > .check__inner {
+        background-color: #9AEEBB; }
+    .main .tasks .delete {
+      color: #4DD784;
+      margin-bottom: 2px;
+      transition: color 0.2s linear; }
+      .main .tasks .delete:hover {
+        color: #ff0000; }
+  .main .clear {
+    position: absolute;
+    left: 30px;
+    bottom: 15px;
+    color: #4DC97E;
+    font-weight: 700;
+    font-size: 18px;
+    transition: color 0.2s linear; }
+    .main .clear:hover {
+      color: #ff0000; }
+  .main .add {
+    position: absolute;
+    right: 40px;
+    bottom: 15px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #DC5252;
+    transition: color 0.2s linear; }
+    .main .add:hover {
+      color: #fc944f; }
+
+/*# sourceMappingURL=style.css.map */

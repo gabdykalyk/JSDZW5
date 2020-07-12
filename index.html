@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="heading">
+            Todo-list
+        </div>
+        <div class="status">
+            <div class="status__item status__item--purple">
+                Total: <span>3</span>
+            </div>
+            <div class="status__item status__item--green">
+                Success: <span>0</span>
+            </div>
+            <div class="status__item status__item--red">
+                Pending: <span>3</span>
+            </div>
+        </div>
+        <div class="form">
+            <form action="">
+                <label class="form__label" for="">
+                    <input type="text" class="filter" placeholder="Filter">
+                    <a href="">
+                        <svg class="arrow" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M8.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.793 8 8.146 5.354a.5.5 0 0 1 0-.708z" />
+                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5H11a.5.5 0 0 1 0 1H4.5A.5.5 0 0 1 4 8z" />
+                        </svg>
+                    </a>
+                </label>
+            </form>
+        </div>
+        <div class="tasks">
+            <div class="tasks__item">
+                <div class="tasks__name">
+                    Standup meeting with the team @5pm
+                </div>
+                <div class="tasks__priority tasks__priority--purple">
+                    Low Priority
+                </div>
+                <div class="tasks__data">
+                    Jul 10
+                </div>
+                <div class="tasks__check">
+                    <form  action="">
+                        <label class="check" for="check">
+                        <input class="check__item" type="checkbox" name="" id="check">
+                        <div class="custom__check">
+                            <div class="check__inner">
+
+                            </div>
+                        </div>
+                        </label>
+                    </form>
+                </div>
+                <div class="tasks__delete">
+                    <a href="">
+                        <svg class="delete" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash-fill" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="tasks__item">
+                <div class="tasks__name">
+                    Order pizza for Granny tonight
+                </div>
+                <div class="tasks__priority tasks__priority--red">
+                    High Priority
+                </div>
+                <div class="tasks__data">
+                    Jul 10
+                </div>
+                <div class="tasks__check">
+                    <form action="">
+                        <label class="check" for="check1">
+                            <input class="check__item" type="checkbox" name="" id="check1">
+                            <div class="custom__check">
+                                <div class="check__inner">
+            
+                                </div>
+                            </div>
+                        </label>
+                    </form>
+                </div>
+                <div class="tasks__delete">
+                    <a href="">
+                        <svg class="delete" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash-fill"
+                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="tasks__item">
+                <div class="tasks__name">
+                    Design, Develop and Deploy Apps to Netlify for Clients
+                </div>
+                <div class="tasks__priority tasks__priority--orange">
+                    Medium Priority
+                </div>
+                <div class="tasks__data">
+                    Jul 10
+                </div>
+                <div class="tasks__check">
+                    <form action="">
+                        <label class="check" for="check2">
+                            <input class="check__item" type="checkbox" name="" id="check2">
+                            <div class="custom__check">
+                                <div class="check__inner">
+            
+                                </div>
+                            </div>
+                        </label>
+                    </form>
+                </div>
+                <div class="tasks__delete">
+                    <a class="tasks__btn" href="">
+                        <svg class="delete" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash-fill"
+                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <a href="">
+            <div class="clear">
+                Clear All
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash-fill" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7z" />
+                </svg>
+            </div>
+        </a>
+        <a href="">
+        <div class="add">
+            Add New
+        </div>
+        </a>
+    </div>
+</body>
+</html>
