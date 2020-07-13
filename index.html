@@ -7,6 +7,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -153,6 +155,47 @@
             Add New
         </div>
         </a>
+    </div>
+
+    <!-- POPUP MENU -->
+    <div class="popup">
+        <div class="popup__heading">
+            Add New Task
+        </div>
+        <div class="popup__container">
+            <div class="popup__title">
+                <span><sup class="star">*</sup>Title</span>
+                <form class="title__form" action="">
+                    <label class="title__label" for="">
+                        <input class="title__input" type="text" placeholder="Tipe something">
+                    </label>
+                </form>
+            </div>
+            <div class="popup__title">
+                <span><sup class="star">*</sup>Deadline</span>
+                <form class="deadline__form" action="">
+                    <label class="deadline__label" for="">
+                        <input required class="deadline__input" placeholder="Chose relevant date" class="textbox-n" type="text" onfocus="(this.type='date')" id="date">
+                    </label>
+                </form>
+            </div>
+            <div class="popup__title popup__title--last">
+                <span><sup class="star">*</sup>Choose Priority</span>
+                <form class="priority__form" action="">
+                    <label class="priority__label" for="">
+                        <select class="priority__select" name="" id="">
+                            <option value="" disabled selected>Choose</option>
+                            <option value="volvo">High</option>
+                            <option value="saab">Medium</option>
+                            <option value="opel">Low</option>
+                        </select>
+                    </label>
+                </form>
+            </div>
+            <div class="btn">
+                <button type="button" class="btn btn-primary btn__add">ADD</button>
+            </div>
+        </div>
     </div>
 </body>
 </html>

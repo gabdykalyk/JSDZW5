@@ -1,0 +1,108 @@
+.popup {
+    width: 328px;
+    height: 304px;
+    background-color: #ffffff;
+    padding-top: 13px;
+    white-space: nowrap;
+    margin: 100px auto;
+
+    &__heading {
+        font-weight: 600;
+        font-size: 24px;
+        color: #26B35E;
+        text-align: center;
+    }
+
+    &__container {
+        width: 260px;
+        height: 215px;
+        background: #E6E6E6;
+        margin: 8px auto 0;
+        padding-top: 22px;
+        padding-left: 12px;
+        font-size: 16px;
+        color: #6B6B6B;
+
+        .popup__title {
+            display: flex;
+            margin-bottom: 21px;
+
+            &--last {
+                margin-bottom: 0;
+            }
+
+            .star {
+            color: #D10909;
+            }
+
+            .title__form {
+                width: 100%;
+                margin-top: -4px;
+                margin-left: 10px;
+            }
+
+            .title__label {
+                font-size: 13px;
+                margin: 0;
+                width: 100%;
+                
+                .title__input {
+                     border: 0;
+                     width: 92%;
+                     outline: none;
+                    
+
+                     &::placeholder {
+                        color: #BEBDBD;
+                     }
+                }
+            }
+
+            .deadline__form {
+                color: #BEBDBD;
+                margin-left: 10px;
+                margin-top: -3px;
+                
+                .deadline__label {
+
+                    .deadline__input{
+                        border: none;
+                        width: 90%;
+                        font-size: 11px;
+                    }
+                }
+            }
+
+            .priority__form {
+                font-size: 11px;
+                width: 100%;
+                margin-left: 10px;
+
+                .priority__label {
+                    width: 100%;
+                }
+
+                .priority__select {
+                    color: #BEBDBD;
+                    border: none;
+                    width: 90%;
+                }
+            }
+        }
+        
+    }
+
+    .btn{
+        display: flex;
+        margin-top: 15px;
+
+        .btn__add {
+            margin: 0 auto;
+            background: #67D292;
+            padding: 0 20px;
+            border: none;
+            font-weight: 600;
+            font-size: 18px;
+        }
+    }
+}
