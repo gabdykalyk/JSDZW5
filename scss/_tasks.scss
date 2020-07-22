@@ -29,14 +29,14 @@
             position: relative;
             width: 20%;
 
-            &--low {
+            &--Low {
                 &::before {
                     @include before;
                     background-color: #4764C9;
                 }
             }
 
-            &--high {
+            &--High {
                 &::before {
                     @include before;
                     background-color: #D10C0C;
@@ -44,7 +44,7 @@
             }
 
             
-            &--medium {
+            &--Medium {
                 &::before {
                     @include before;
                     background-color: #F1AE00;;
@@ -99,3 +99,7 @@
 
 
     }
+
+.completed {
+    text-decoration: line-through;
+}

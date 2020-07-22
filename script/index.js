@@ -1,6 +1,6 @@
 function renderTask(task) {
     return `
-         <div class="tasks__item" ${task.completed ? 'completed' : ''}" data-id="${task.id}">
+         <div class="tasks__item ${task.completed ? 'completed' : ''}" data-id="${task.id}">
                 <div class="tasks__name">
                     ${task.title}
                 </div>
@@ -150,10 +150,10 @@ document.querySelector('#clear').addEventListener('click', () => {
 });
 
 const newTaskForm = document.querySelector('#new-task-form');
+console.log(newTaskForm.elements)
 
 newTaskForm.addEventListener('submit', function () {
     event.preventDefault();
-    console.log("hi")
 
     const formElements = newTaskForm.elements;
 

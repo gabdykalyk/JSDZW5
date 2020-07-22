@@ -1,7 +1,7 @@
 const PRIORITIES = {
-    LOW: 'low',
-    HIGH: 'high',
-    MEDIUM: 'medium'
+    LOW: 'Low',
+    HIGH: 'High',
+    MEDIUM: 'Medium'
 }
 
 function Task(title, priority, date) {

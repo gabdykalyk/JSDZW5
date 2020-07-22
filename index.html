@@ -140,15 +140,13 @@
                 </div>
             </div> -->
         </div>
-        <a href="">
-            <div class="clear" id="clear">
+        <a href="" class="clear" id="clear">
                 Clear All
                 <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash-fill" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd"
                         d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7z" />
                 </svg>
-            </div>
         </a>
         <a href="">
         <div class="add" id="new-task">
@@ -159,36 +157,36 @@
 
     <!-- POPUP MENU -->
     <div class="popup" id="modal">
-        <form class="task" action="#" id="new-task-form">
+        <form action="" class="task" id="new-task-form">
             <div class="popup__heading">
                 Add New Task
             </div>
             <div class="popup__container">
                 <div class="popup__title">
                     <span><sup class="star">*</sup>Title</span>
-                        <label class="task__label" for="">
-                            <input class="title__input" type="text" placeholder="Tipe something">
+                        <label class="title__label" for="">
+                            <input name="title" class="title__input" type="text" placeholder="Tipe something">
                         </label>
                 </div>
                 <div class="popup__title">
                     <span><sup class="star">*</sup>Deadline</span>
-                        <label class="task__label" for="">
+                        <label class="deadline__label" for="">
                             <input required class="deadline__input" placeholder="Chose relevant date" class="textbox-n" type="text" onfocus="(this.type='date')" id="date">
                         </label>
                 </div>
                 <div class="popup__title popup__title--last">
                     <span><sup class="star">*</sup>Choose Priority</span>
-                        <label class="task__label" for="">
-                            <select class="priority__select" name="" id="" >
+                        <label class="priority__label" for="">
+                            <select class="priority__select" name="priority" required>
                                 <option value="" disabled selected>Choose</option>
-                                <option value="volvo">High</option>
-                                <option value="saab">Medium</option>
-                                <option value="opel">Low</option>
+                                <option value="HIGH">High</option>
+                                <option value="MEDIUM">Medium</option>
+                                <option value="LOW">Low</option>
                             </select>
                         </label>
                 </div>
                 <div class="btn">
-                    <button type="button" class="btn btn-primary btn__add">ADD</button>
+                    <button type="submit" class="btn btn-primary btn__add">ADD</button>
                 </div>
             </div>
         </form>
