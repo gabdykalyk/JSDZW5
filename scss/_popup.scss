@@ -106,3 +106,17 @@
         }
     }
 }
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(230, 230, 230, 0.8);
+  display: none;
+}
+
+.popup.open {
+  display: block;
+}

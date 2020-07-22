@@ -29,14 +29,14 @@
             position: relative;
             width: 20%;
 
-            &--purple {
+            &--low {
                 &::before {
                     @include before;
                     background-color: #4764C9;
                 }
             }
 
-            &--red {
+            &--high {
                 &::before {
                     @include before;
                     background-color: #D10C0C;
@@ -44,7 +44,7 @@
             }
 
             
-            &--orange {
+            &--medium {
                 &::before {
                     @include before;
                     background-color: #F1AE00;;
