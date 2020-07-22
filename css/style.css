@@ -63,7 +63,8 @@
     justify-content: space-between;
     margin-top: 25px; }
   .tasks__name {
-    width: 60%; }
+    width: 60%;
+    word-break: break-word; }
   .tasks__priority {
     position: relative;
     width: 20%; }
@@ -240,7 +241,8 @@ body {
     color: #4DC97E;
     font-weight: 700;
     font-size: 18px;
-    transition: color 0.2s linear; }
+    transition: color 0.2s linear;
+    cursor: pointer; }
     .main .clear:hover {
       color: #ff0000; }
   .main .add {
